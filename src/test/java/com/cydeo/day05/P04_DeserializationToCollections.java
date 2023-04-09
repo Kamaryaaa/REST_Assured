@@ -1,4 +1,4 @@
-package com.cydeo.day5;
+package com.cydeo.day05;
 
 import com.cydeo.utilities.SpartanTestBase;
 import io.restassured.http.ContentType;
@@ -10,9 +10,6 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Map;
 
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
 import static io.restassured.RestAssured.*;
 
 

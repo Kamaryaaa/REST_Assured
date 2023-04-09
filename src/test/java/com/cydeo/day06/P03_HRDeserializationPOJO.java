@@ -2,10 +2,13 @@ package com.cydeo.day06;
 
 import com.cydeo.pojo.Employee;
 import com.cydeo.pojo.Region;
+import com.cydeo.pojo.Regions;
 import com.cydeo.utilities.HrTestBase;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
@@ -53,6 +56,20 @@ public class P03_HRDeserializationPOJO extends HrTestBase {
         -- Create Regions POJO
         -- And ignore field that you dont need
      */
+    @DisplayName("GET all regions and use POJO")
+    @Test
+    public void test3(){
+        JsonPath jsonPath = get("/regions").then().statusCode(200).contentType("application/json").extract().jsonPath();
+
+        Regions regions =  jsonPath.getObject("", Regions.class);
+        System.out.println("regions = " + regions);
+
+
+
+
+
+
+    }
 
 
 

@@ -1,4 +1,4 @@
-package com.cydeo.day5;
+package com.cydeo.day05;
 import com.cydeo.utilities.HrTestBase;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -8,9 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
 import static io.restassured.RestAssured.*;
 
 public class P03_HamcresHr extends HrTestBase {
