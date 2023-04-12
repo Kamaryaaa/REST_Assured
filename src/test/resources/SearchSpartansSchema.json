@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "content",
+    "totalElement"
+  ],
+  "properties": {
+    "content": {
+      "type": "array",
+      "default": [],
+      "title": "The content Schema",
+      "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+          "id",
+          "name",
+          "gender",
+          "phone"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "The id Schema",
+            "examples": [
+              13,
+              14,
+              15,
+              16,
+              18
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema",
+            "examples": [
+              "Jaimie PUT",
+              "Grenville",
+              "Severus",
+              "Sinclair",
+              "Allen"
+            ]
+          },
+          "gender": {
+            "type": "string",
+            "title": "The gender Schema",
+            "examples": [
+              "Female",
+              "Male"
+            ]
+          },
+          "phone": {
+            "type": "integer",
+            "title": "The phone Schema",
+            "examples": [
+              7842554878,
+              1065669615,
+              1938695106,
+              9714460354,
+              8716150217
+            ]
+          }
+        },
+        "examples": [{
+          "id": 13,
+          "name": "Jaimie PUT",
+          "gender": "Female",
+          "phone": 7842554878
+        },
+          {
+            "id": 14,
+            "name": "Grenville",
+            "gender": "Male",
+            "phone": 1065669615
+          },
+          {
+            "id": 15,
+            "name": "Severus",
+            "gender": "Female",
+            "phone": 1938695106
+          },
+          {
+            "id": 16,
+            "name": "Sinclair",
+            "gender": "Male",
+            "phone": 9714460354
+          },
+          {
+            "id": 18,
+            "name": "Allen",
+            "gender": "Male",
+            "phone": 8716150217
+          }]
+      },
+      "examples": [
+        [{
+          "id": 13,
+          "name": "Jaimie PUT",
+          "gender": "Female",
+          "phone": 7842554878
+        },
+          {
+            "id": 14,
+            "name": "Grenville",
+            "gender": "Male",
+            "phone": 1065669615
+          },
+          {
+            "id": 15,
+            "name": "Severus",
+            "gender": "Female",
+            "phone": 1938695106
+          },
+          {
+            "id": 16,
+            "name": "Sinclair",
+            "gender": "Male",
+            "phone": 9714460354
+          },
+          {
+            "id": 18,
+            "name": "Allen",
+            "gender": "Male",
+            "phone": 8716150217
+          }]
+      ]
+    },
+    "totalElement": {
+      "type": "integer",
+      "default": 0,
+      "title": "The totalElement Schema",
+      "examples": [
+        696
+      ]
+    }
+  },
+  "examples": [{
+    "content": [{
+      "id": 13,
+      "name": "Jaimie PUT",
+      "gender": "Female",
+      "phone": 7842554878
+    },
+      {
+        "id": 14,
+        "name": "Grenville",
+        "gender": "Male",
+        "phone": 1065669615
+      },
+      {
+        "id": 15,
+        "name": "Severus",
+        "gender": "Female",
+        "phone": 1938695106
+      },
+      {
+        "id": 16,
+        "name": "Sinclair",
+        "gender": "Male",
+        "phone": 9714460354
+      },
+      {
+        "id": 18,
+        "name": "Allen",
+        "gender": "Male",
+        "phone": 8716150217
+      }],
+    "totalElement": 696
+  }]
+}
