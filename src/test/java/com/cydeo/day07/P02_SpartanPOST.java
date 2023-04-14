@@ -78,6 +78,7 @@ public class P02_SpartanPOST extends SpartanTestBase {
         requestBodyMap.put("name","John Doe");
         requestBodyMap.put("gender","Male");
         requestBodyMap.put("phone","8877445596");
+        System.out.println("requestBodyMap = " + requestBodyMap);
 
         JsonPath jsonPath = given().accept(ContentType.JSON) // send me a json response
                 .and()
